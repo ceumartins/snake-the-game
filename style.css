@@ -167,3 +167,8 @@ canvas.border {
 #gameover span {
     font-size: .5em;;
 }
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
