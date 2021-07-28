@@ -38,7 +38,7 @@ h1 {
     margin: 0 0 40px 0;
     text-align: center;;
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-    background-image: url(img/dark_wall.png);
+    background-image: url(img/wallpaper.jpg);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(90,90,90, .1);
@@ -55,7 +55,7 @@ aside div div {
     margin-bottom: 20px;
     box-sizing: border-box;
     padding: 10px;
-    background-color: lightgreen;
+    background-color: #ff9bae;
     border: none;
     border-radius: 5px;
     box-shadow: 4px 4px 8px rgba(100, 100, 100, .5),
@@ -88,7 +88,7 @@ aside button:active {
     justify-content: center;
     width: 460px;
     height: 460px;;
-    background-color: lightgreen;
+    background-color: #ff9bae;
     border-radius: 5px;
     box-shadow: 4px 4px 8px rgba(100, 100, 100, .5),
     -4px -4px 8px rgba(0, 0, 0, .5),
@@ -118,8 +118,8 @@ canvas.border {
     justify-content: center;    
     flex-direction: column;
     border: 2px solid black;
-    background-color: lightgreen;
-    box-shadow: 1px 1px lightgreen, 6px 6px black;
+    background-color: #ff9bae;
+    box-shadow: 1px 1px #ff9bae, 6px 6px black;
 }
 #gameover span {
     font-size: .5em;;
