@@ -16,7 +16,8 @@ body {
     flex-direction: row;
     margin-top: 160px;
     padding: 30px;
-    border-radius: 20px;    
+    border-radius: 20px;
+    background-color: #333;
     
     box-shadow: inset 4px 4px 8px rgba(70, 70, 70, .5),
     inset -4px -4px 8px rgba(0, 0, 0, .5),
@@ -29,7 +30,8 @@ aside {
     flex-direction: column;
     width: 320px;
     margin-right: 40px;
-    align-items: right;; 
+    align-items: right; 
+    background-color: #333;
 }
 h1 {    
     font-family: 'Squada One', cursive;
@@ -38,10 +40,7 @@ h1 {
     margin: 0 0 40px 0;
     text-align: center;;
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-    background-image: url(img/wallpaper.jpg);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(90,90,90, .1);
+    color: #ff4265; 
     cursor: default;
 }
 aside div{
@@ -55,7 +54,23 @@ aside div div {
     margin-bottom: 20px;
     box-sizing: border-box;
     padding: 10px;
-    background-color: #ff9bae;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(100, 100, 100, .5),
+    -4px -4px 8px rgba(0, 0, 0, .5),
+    inset 0 0 8px rgba(0, 0, 0, .5);
+}
+aside score {
+    display: inline-block;
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: white;
     border: none;
     border-radius: 5px;
     box-shadow: 4px 4px 8px rgba(100, 100, 100, .5),
@@ -74,13 +89,41 @@ aside button {
     position: relative;
     top: 12px;
     margin-left: 10px;
+    background: none;
+    border: 2px solid #ff4265;
     border-radius: 50%;
-    border:none;
     box-shadow: -2px -2px 2px rgba(255,255,255,.1), 2px 2px 2px rgba(0,0,0,.5);
-    background-image: url(img/wallpaper.jpg);
+}
+aside button2 {
+    background: none;
+    border: 2px solid #ff4265;
+    border-radius: 5px;
+    color: #FFF;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(100, 100, 100, .5),
+    -4px -4px 8px rgba(0, 0, 0, .5),
+    inset 0 0 8px rgba(0, 0, 0, .5);
+
+    display: inline-block;
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+
 }
 aside button:active {
     box-shadow: 2px 2px 2px rgba(255,255,255,.1), -2px -2px 2px rgba(0,0,0,.5);
+}
+aside button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+aside button2:active {
+    box-shadow: 2px 2px 2px rgba(255,255,255,.1), -2px -2px 2px rgba(0,0,0,.5);
+}
+aside button2:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 #jogo {
     display: flex;
@@ -96,7 +139,7 @@ aside button:active {
 
 }
 canvas.border {
-    border: 2px solid #ff4265;
+    border: 2px solid black;
 }
 .blink {
     animation:blinking 1s infinite;

@@ -74,7 +74,7 @@ function criarBG() {
 
 function criarCobrinha() {
     for(i=0; i < snake.length; i++){
-        context.fillStyle = 'gray';
+        context.fillStyle = 'black';
         context.fillRect(snake[i].x, snake[i].y, box, box)        
         context.strokeStyle = '#ff9bae';
         context.strokeRect(snake[i].x, snake[i].y, box, box)

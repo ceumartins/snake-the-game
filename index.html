@@ -12,14 +12,12 @@
 </head>
 <body>
     <div id="content">    
-        <aside>
-            
+        <aside>            
             <h1>SNAKE GAME!</h1>
             <div>
-                <div>
+                <score>
                     Score: <span id="spanScore">0</span>
-                </div>
-                <button id="btnScore"></button>
+                </score>
             </div>
             <div>
                 <div>
@@ -33,12 +31,15 @@
                 </div>
                 <button id="btnBorder"></button>
             </div>
+            <div>
+                <button2 id="btnScore">Play Again</button2>
+            </div>
         </aside>
         <div id="jogo">
             <canvas id="snake" width="448" height="448"></canvas>
             <div id="gameover" class="blink" style="display:none;">
                 GAME OVER!<br />
-                <span>Click on Score Button to restart</span>
+                <span>Click on Play Again to restart</span>
             </div>
         </div>        
     </div>
